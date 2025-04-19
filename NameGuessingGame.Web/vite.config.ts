@@ -12,5 +12,14 @@ export default defineConfig({
   },
   server: {
     port: 5173,
+    proxy: {
+      '/gamehub': {
+        target: 'http://localhost:5000',
+        ws: true
+      },
+      '/api': {
+        target: 'http://localhost:5000'
+      }
+    }
   }
 }) 

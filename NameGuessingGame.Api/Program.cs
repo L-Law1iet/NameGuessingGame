@@ -28,7 +28,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVueApp", builder =>
     {
-        builder.WithOrigins("http://localhost:5173") // 前端Vue應用的URL
+        builder
+               .SetIsOriginAllowed(_ => true) // 允許任何來源
                .AllowAnyMethod()
                .AllowAnyHeader()
                .AllowCredentials();

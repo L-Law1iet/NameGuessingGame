@@ -50,6 +50,7 @@ orleans.codegen.cs
 !**/packages/build/
 
 ## Node.js / 前端相關 (適用於前端專案)
+**/dist/
 **/node_modules/
 **/npm-debug.log
 **/yarn-debug.log

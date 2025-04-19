@@ -16,7 +16,7 @@ class SignalRService {
   
   constructor() {
     this.connection = new signalR.HubConnectionBuilder()
-      .withUrl('http://localhost:5000/gamehub')
+      .withUrl('/gamehub')
       .withAutomaticReconnect()
       .build()
       
